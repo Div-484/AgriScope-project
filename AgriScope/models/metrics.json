@@ -1,0 +1,73 @@
+{
+  "best_model": "ExtraTrees",
+  "top5": [
+    "ExtraTrees",
+    "GradientBoosting",
+    "RandomForest",
+    "XGBoost",
+    "DecisionTree"
+  ],
+  "models": {
+    "RandomForest": {
+      "MAE": 369.58,
+      "RMSE": 495.6,
+      "R2": 0.6167,
+      "Accuracy": 61.67
+    },
+    "GradientBoosting": {
+      "MAE": 368.01,
+      "RMSE": 490.73,
+      "R2": 0.6242,
+      "Accuracy": 62.42
+    },
+    "ExtraTrees": {
+      "MAE": 342.53,
+      "RMSE": 458.01,
+      "R2": 0.6727,
+      "Accuracy": 67.27
+    },
+    "DecisionTree": {
+      "MAE": 473.92,
+      "RMSE": 662.23,
+      "R2": 0.3156,
+      "Accuracy": 31.56
+    },
+    "Ridge": {
+      "MAE": 682.35,
+      "RMSE": 823.7,
+      "R2": -0.0588,
+      "Accuracy": 0.0
+    },
+    "ElasticNet": {
+      "MAE": 692.26,
+      "RMSE": 822.37,
+      "R2": -0.0554,
+      "Accuracy": 0.0
+    },
+    "KNeighbors": {
+      "MAE": 666.02,
+      "RMSE": 830.52,
+      "R2": -0.0764,
+      "Accuracy": 0.0
+    },
+    "XGBoost": {
+      "MAE": 368.12,
+      "RMSE": 498.02,
+      "R2": 0.613,
+      "Accuracy": 61.3
+    }
+  },
+  "features": [
+    "district_encoded",
+    "season_encoded",
+    "crop_type_encoded",
+    "total_rainfall",
+    "rainy_days",
+    "average_tmax",
+    "average_tmin",
+    "average_humidity"
+  ],
+  "log_transform": true,
+  "dataset_size": 970,
+  "test_size": 194
+}
